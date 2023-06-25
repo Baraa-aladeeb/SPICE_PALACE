@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SPICE PALACE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&display=swap');
+
+body{
+    font-family: "Spline Sans",sans-serif;
+    color:#777;
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight:600 ;
+    color: #222;
+}
+
+a{
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+}
+
+a:hover{
+    color: #ec5f69;
+}
+
+img{
+    width: 100%;
+}
+
+#navbarNav a:hover{
+    color: #ec5f69;
+}
+
+#navbarNav a:active{
+    color: #d22c37 !important;
+}
+
+section{
+    padding-top:120px;
+    padding-bottom: 120px;
+}
+
+.shadow-on-hover{
+    transition: all 0.4s;
+}
+
+.shadow-on-hover:hover{
+    box-shadow: 0 10px 40px rgba(0, 0, 0,0.1);
+}
+
+/*Btn*/
+.btn{
+    border: 0;
+    padding: 14px 38px;
+}
+
+.btn-brand{
+    color: #fff;
+    font-weight: 500;
+    border-color: #ec5f69;
+    background-color: #ec5f69;
+}
+
+.btn-brand:hover{
+    border-color: #d22c37 ;
+    background-color: #d22c37;
+
+}
+
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+/*slider*/
+.slide-1{
+    background: linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0,0.5)),url(./image/Char-grilled\ and\ flavor-filled.jpg);
+}
+
+.slide-2{
+    background: linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0,0.5)),url(./image/Fresh\ and\ Tasty\ Food.jpg );
+}
+
+#carouselExampleIndicators h6::after,
+#carouselExampleIndicators h6::before{
+    content: " ";
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: rgba(0,0, 0, 0.6);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+    
+}
+
+/*About*/
+#about .divider{
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: #ec5f69;
+}
+
+/*Intro text*/
+.intro-text{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.intro-text p{
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+/*Menu*/
+#menu .nav-pills .nav-link{
+    background-color:#fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0,0.1);
+}
+
+#menu .nav-pills .nav-link.active{
+    background-color: #ec5f69;
+    color: #777;
+}
+
+.menu-item .stars{
+    color: #f58d17;
+}
+
+/*Features*/
+#features{
+    background: linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0,0.5)),url(image/photo2.jpg);
+}
+
+.feature{
+    border: 2px solid #fff;
+}
+
+.feature .feature-icon{
+    width: 70px;
+    height: 70px;
+    background-color: #ec5f69;
+    color: #fff;
+    font-size: 28px;
+    display: inline-grid;
+    align-content: center;
+    text-align: center;
+}
+
+/*Team*/
+.team-member img{
+    max-width: 140px;
+    box-shadow: -10px -10px 0 #ec5f69;
+    border-radius: 100px;
+}
+
+/*Reviews*/
+#reviews{
+    background: linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0,0.5)),url(./image/photo3.jpg);
+}
+.review img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.review .quote-icon{
+    font-size: 74px;
+    color: #ec5f69;
+    line-height: 1;
+}
+
+.review .stars{
+    color: #f58d17;
+}
+
+#reviews .carousel-indicators{
+    margin-bottom: -3rem;
+}
+
+/*Reservation*/
+#reservation .form-control{
+    border-radius: 5px;
+}
+
+#reservation .form-control:focus{
+    box-shadow: none;
+    border-color:rgb(236, 95, 105);
+}
+
+#reservation input.form-control{
+    height: 47px;
+}
+
+/*insta posts*/
+.insta-posts{
+    position: relative;
+    overflow: hidden;
+}
+
+.insta-posts .insta-btn{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 26px;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+.insta-posts img{
+    transition: all 0.4s;
+}
+
+.insta-posts:hover img{
+    transform: scale(1.2);
+}
+
+.insta-posts:hover .insta-btn{
+    opacity: 1;
+}
+
+/*Blog post*/
+.blog-post img{
+    width: 40%;
+    object-fit: cover;
+}
+
+@media(max-width:768px){
+    .blog-post{
+        flex-direction: column;
+    }
+    .blog-post img{
+        width: 100%;
+    }
+}
+
+/*Footer*/
+footer{
+    background: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0,0.7)),url(./image/photo1.jpg);
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.footer-top{
+    margin-bottom: 30px;
+}
+
+footer p,
+footer a{
+    color: rgba(255, 255, 255,0.75);
+}
+
+footer .social-links a{
+    font-weight: normal;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+footer img{
+    max-width: 175px;
+}
+
+.footer-botton{
+    padding-top: 30px;
+    border-top:1px solid rgba(255, 255, 255,0.4) ;
+}
+</style>
+
+<body>
+
+    <!-- navbar-->
+
+    <nav class="navbar navbar-expand-lg bg-white shadow py-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./image/spice_palace.jpg " width="150" height="60" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-brand">Order Online</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Hero Slider-->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+            </button>
+        </div>
+        <div class="carousel-inner">
+
+            <div class="carousel-item text-center active vh-100 slide-1 bg-cover">
+                <div class="container h-100 d-flex align-items-center justify-content-center ">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h6 class="text-white">WELCOME TO SPICE PALACE</h6>
+                            <h1 class="display-1 fw-bold text-white">Char-grilled and flavor-filled</h1>
+                            <a href="#reservation" class="btn btn-brand">Book Table</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item text-center vh-100 slide-2 bg-cover">
+                <div class="container h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h6 class="text-white">WELCOME TO SPICE PALACE</h6>
+                            <h1 class="display-1 fw-bold text-white">Fresh and Tasty Food</h1>
+                            <a href="#reservation" class="btn btn-brand">Book Table</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--About-->
+    <section id="about">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-5">
+                    <img src="./image/about.jpg" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <h1>About us</h1>
+                    <div class="divider my-4"></div>
+                    <p>We offer the most delicious wild and sea food, cooked by the most famous chefs known for their
+                        creativity in cooking food.
+                    </p>
+                    <p> Quiet location and fast service.
+                    </p>
+                    <a href="#" class="btn btn-brand">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Menu-->
+    <section id="menu" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Explore Our Menu</h1>
+                    <p>Delicious wild and seafood Taste and share your experience with us.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!---->
+        <div class="container">
+            <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="pills-breakfast-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-breakfast"
+                        aria-selected="true">Breakfast</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-lunch-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-lunch" type="button" role="tab" aria-controls="pills-lunch"
+                        aria-selected="true">Lunch</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-snacks-tab" data-bs-toggle="pill" data-bs-target="#pills-snacks"
+                        type="button" role="tab" aria-controls="pills-snacks" aria-selected="true">Snacks</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-dessert-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-dessert" type="button" role="tab" aria-controls="pills-dessert"
+                        aria-selected="true">Dessert</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show " id="pills-breakfast" role="tabpanel"
+                    aria-labelledby="pills-breakfast-tab" tabindex="0">
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/breakfast-1.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Falafel</a></h5>
+                                    <p class="small">Dough fried in oil, shaped into balls, made of chickpeas and beans,
+                                        served with fresh vegetables.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/breakfast-2.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Stuffed Samoon</a></h5>
+                                    <p class="small">This dish consists of one piece of bun stuffed according to the
+                                        customer's taste with boiled eggs and vegetables.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/breakfast-3.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Western Breakfast</a></h5>
+                                    <p class="small">This dish consists of croissants, pancakes and eggs with yogurt and
+                                        strawberries.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/breakfast-4.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Light Breakfast</a></h5>
+                                    <p class="small">This dish consists of olives, cheese, mortadella and pastries with
+                                        fresh vegetables.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show active" id="pills-lunch" role="tabpanel"
+                    aria-labelledby="pills-lunch-tab" tabindex="0">
+
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/lunch-1.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Kibbeh</a></h5>
+                                    <p class="small">The kibbeh consists of bulgur and fresh meat and is stuffed with
+                                        minced lamb, fried and mixed with nuts, then fried.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/lunch-2.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Fried Chicken Pieces</a></h5>
+                                    <p class="small">This dish consists of two pieces of fried chicken with delicious
+                                        spaghetti and salad.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/lunch-3.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Grilled Chicken Pieces</a></h5>
+                                    <p class="small">This dish consists of crispy grilled chicken, served with
+                                        mayonnaise and french fries.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/lunch-4.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Grilled Fish</a></h5>
+                                    <p class="small">This dish consists of fish marinated in a special seasoning and
+                                        grilled, served with mayonnaise and french fries.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/lunch-5.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Pizza</a></h5>
+                                    <p class="small">This pizza consists of delicious crispy dough topped with special
+                                        tomato sauce, lots of cheese, and hood dog pieces, served with french fries.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/lunch-6.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Shawarma</a></h5>
+                                    <p class="small">This dish consists of small pieces of grilled chicken wrapped in
+                                        crispy bread, served with mayonnaise, pickles and french fries.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/lunch-7.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Hamburger</a></h5>
+                                    <p class="small">A piece of samoon stuffed with a marinated and grilled round piece
+                                        of meat, topped with tomato slices and a piece of egg.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/lunch-8.jpeg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Salmon</a></h5>
+                                    <p class="small">This dish consists of a piece of salmon cooked to perfection with
+                                        pieces of fresh vegetables, making it a dish rich in vitamins.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade show " id="pills-snacks" role="tabpanel" aria-labelledby="pills-snacks-tab"
+                    tabindex="0">
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/snacks-1.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Samosa</a></h5>
+                                    <p class="small">Thin dough stuffed with soft meat and fried.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/snacks-2.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">French Fries</a></h5>
+                                    <p class="small">French fries, served with mayonnaise and ketchup .</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/snacks-3.jpeg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Mozzarella Sticks</a></h5>
+                                    <p class="small">Mozzarella sticks covered with a crispy layer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/snacks-4.webp" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Pasta Salad</a></h5>
+                                    <p class="small">Boiled spaghetti with mayonnaise, corn and grated carrot.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show " id="pills-dessert" role="tabpanel" aria-labelledby="pills-dessert-tab"
+                    tabindex="0">
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/dessert-1.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Nutella Crepe</a></h5>
+                                    <p class="small">Thin dough stuffed and decorated with Nutella and strawberries.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/dessert-2.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Cake</a></h5>
+                                    <p class="small">A piece of cake stuffed and decorated with cream and pieces of
+                                        dried fruits.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/dessert-3.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Donut</a></h5>
+                                    <p class="small">Round fried dough decorated with chocolate and nuts.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./image/dessert-4.jpg" height="300" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a herf="#">Ice Creame</a></h5>
+                                    <p class="small">There are many different flavors of ice cream.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--Features-->
+    <section id="features" class="bg-cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="text-white">Why to choose us?</h1>
+                    <p class="text-white">
+                        We have many great features that distinguish us from others, I promise you that you will repeat
+                        your visit.
+                    </p>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-3 col-sm-6 ">
+                    <div class="feature py-5 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-wifi-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Free wifi </h4>
+                        <p class="text-white">Fast internet 24 hours.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 ">
+                    <div class="feature py-5 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-timer-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Fast Delivery</h4>
+                        <p class="text-white">Within 20-30 minutes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 ">
+                    <div class="feature py-5 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-user-5-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Friendly staff</h4>
+                        <p class="text-white">Nice way to deal with customers.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 ">
+                    <div class="feature py-5 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-shield-star-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Highly Rated</h4>
+                        <p class="text-white">We offer special dishes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Team-->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Our Team Members</h1>
+                    <p>
+                        We are pleased to introduce you to our team of chefs.
+                    </p>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-5 shadow-on-hover border text-center">
+                        <img src="./image/chaf-1.png" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Ahmad</h4>
+                            <p class="mb-0">Main chef</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-5 shadow-on-hover border text-center">
+                        <img src="./image/chaf-2.png" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Jafar</h4>
+                            <p class="mb-0">Main chef</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-5 shadow-on-hover border text-center">
+                        <img src="./image/chaf-3.png" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Mohammed</h4>
+                            <p class="mb-0">Main chef</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-5 shadow-on-hover border text-center">
+                        <img src="./image/chaf-4.png" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Ali</h4>
+                            <p class="mb-0">Main chef</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Review-->
+    <section id="reviews" class="bg-cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="text-white">Our Clients Say</h1>
+                    <p class="text-white">
+                        Some of what our customers said about our restaurant, share your experience.
+                    </p>
+                </div>
+            </div>
+
+            <div id="carouselExampleIndicators1" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active ">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="review bg-white p-5 text-center">
+                                    <div class="quote-icon"> <i class="ri-double-quotes-l"></i></div>
+                                    <p class="mb-0">Hi, my name is Leen. I came here once to try the food. I did not
+                                        expect it to be so amazing. Really, the distinctive taste of the food is capable
+                                        of transporting you to another parallel world.</p>
+                                    <div class="person mt-4">
+                                        <img src="./image/client-2.jpg" alt="">
+                                        <h5 class="mb-0 mt-2">Leen</h5>
+                                        <div>
+                                            <div class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-half-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item ">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="review bg-white p-5 text-center">
+                                    <div class="quote-icon"> <i class="ri-double-quotes-l"></i></div>
+                                    <p class="mb-0">Hello, my name is Wael. I cannot describe how much I like the place
+                                        and the food. When I come here, I feel comfortable. Your restaurant is very
+                                        quiet and your food is very delicious. I love this atmosphere.</p>
+                                    <div class="person mt-4 mt-2">
+                                        <img src="./image/client-1.jpg" alt="">
+                                        <h5 class="mb-0">Wael </h5>
+                                        <div>
+                                            <div class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-half-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Reservation-->
+    <section id="reservation">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Book your Table</h1>
+                    <p> Reserve your table to ensure a place is available when you come, welcome in SPICE PALACE
+                        restaurant.
+                    </p>
+                </div>
+            </div>
+            <form action="#" class="row justify-content-center">
+                <div class="col-lg-8 ">
+                    <div class="row g-3">
+                        <div class="form-group col-md-6 ">
+                            <input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="number" class="form-control" min="1" placeholder="Number of person" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="tel" class="form-control" placeholder="Number phone" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="date" class="form-control" name="Date" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="time" class="form-control" placeholder="Time" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Enter Message"
+                                r></textarea>
+                        </div>
+                        <div class="form-group col-md-12 text-center">
+                            <input type="submit" value="submit" class="btn btn-brand">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!--insta posts-->
+    <div class="row g-0">
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-posts">
+                <img src="./image/1.jpg" height="300" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-posts">
+                <img src="./image/2.jpg" height="300" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-posts">
+                <img src="./image/3.jpeg" height="300" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-posts">
+                <img src="./image/4.jpg" height="300" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Blog Post-->
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Blog posts</h1>
+                    <p> We always strive to be the best.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./image/1.jpg" height="200" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>posted : 3Sep,2022</p>
+                            <h4><a href="#">How to make delicous food</a></h4>
+                            <p>We make the most delicious dishes using fresh vegetables picked from our farms and washed well before the cutting and cooking stage. The chef performs the next stage, which is the cooking stage. Preparing meals using herbs and spices is one of the best ways to add color, taste and aroma to food without adding salt or fat...</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./image/2.jpg" height="200" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>posted : 3Sep,2022</p>
+                            <h4><a href="#">How do we solve the problems facing the restaurant management</a></h4>
+                            <p>Reaching success is not easy, for sure you will encounter many problems on the way, but the role of managing successful restaurants remains to overcome these problems and find appropriate solutions that prevent their recurrence...</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./image/3.jpeg" height="200" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>posted : 2Dec,2022</p>
+                            <h4><a href="#">Customer experience</a></h4>
+                            <p>It is true that restaurants depend on food and the pleasure of the dish in the first place, but do not forget that restaurants are mainly hospitality, and your restaurant should be distinguished by hospitality, good welcome and beauty of the place, so we always accept criticism from you and strive to be the best...</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./image/4.jpg" height="200" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>posted : 2Dec,2022</p>
+                            <h4><a href="#">Employee satisfaction, not just the customer</a></h4>
+                            <p>Some focus on customer satisfaction and neglect employee satisfaction, while employee satisfaction creates customer satisfaction.  Having a happy, harmonious and working team will work wonders for your restaurant...</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="bg-cover">
+        <div class="footer-top ">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-4">
+                        <img src="./image/t.png" class="mb-4" width="150" height="60" alt="">
+                        <p>We always strive to make you happy.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-youtube-fill"></i></a>
+                            <a href="#"><i class="ri-google-play-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 ms-auto">
+                        <h6 class="text-white">CONTACT</h6>
+                        <p class="mb-1">p:(03) 9283 4726</p>
+                        <p class="mb-1">E:spice_palace@mill.com</p>
+                        <p class="mb-0">A: 14 paramore street mornington peninsula victoria 3552</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6 class="text-white mb-4">OPENING HOURS</h6>
+                        <p class="mb-1">Monday-Friday : 08:00 - 22:00</p>
+                        <p class="mb-1">Tusday-Sunday : 08:00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-botton">
+            <div class="container">
+                <div class="row gy-3 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">Copyrights all rights reserved</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="mb-0">Designed By <a href="#">Baraa</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
